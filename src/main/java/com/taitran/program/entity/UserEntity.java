@@ -16,7 +16,7 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name = "USER_AUTH_TBL")
-public class User {
+public class UserEntity {
 
   @Id
   @GeneratedValue
