@@ -1,0 +1,13 @@
+[Unit]
+Description=Cassandra-service
+
+[Service]
+User=taitv
+Type=forking
+#path to executable.
+WorkingDirectory=/home/taitv/env/cassandra/apache-cassandra-3.11.10
+ExecStart=/home/taitv/env/cassandra/apache-cassandra-3.11.10/bin/cassandra
+ExecStop=/home/taitv/env/cassandra/apache-cassandra-3.11.10/bin/cassandra
+Restart=always
+[Install]
+WantedBy=multi-user.target
